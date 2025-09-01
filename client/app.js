@@ -1,5 +1,7 @@
 async function getMessage() {
-  const response = await fetch("http://localhost:8080/message");
+  const response = await fetch(
+    "https://mono-repo-client-2kqz.onrender.com/message"
+  );
 
   const message = await response.json();
 
